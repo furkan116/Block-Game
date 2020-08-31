@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
     Game game;
     
     // Game Loop
-    while (game.getWindowIsOpen()){
+    while (game.getWindowIsOpen() && !game.getEndGame()){
         //Update
         game.update();
         
